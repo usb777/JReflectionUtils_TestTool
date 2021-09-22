@@ -5,9 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.util.ReflectionTestUtils;
-
 import com.model.jreflect.Employee;
-
 import com.model.jreflect.Employee;
 
 public class EmployeeTest {
@@ -35,6 +33,8 @@ public class EmployeeTest {
 		   
 		   // put parameters inside invoke for method with params
 		   Assert.assertEquals(ReflectionTestUtils.invokeMethod(employee, "toStringEmplParam",3,"Dzen"),"Employee id = 5 Employee name =Dzmitry" );
+		   
+		   // Also we can test Protected and Private methods
 		   
 	}
 
